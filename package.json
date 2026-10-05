@@ -1,0 +1,14 @@
+{
+  "name": "fairplay-verifier",
+  "version": "1.0.0",
+  "description": "Browser-only provably fair verifier for Stake-style Dice, Limbo, Plinko, Mines and Keno, tested against Stake's own calculator.",
+  "main": "pf-core.js",
+  "license": "MIT",
+  "homepage": "https://fairplayaudit.com/verifier/",
+  "scripts": {
+    "test": "node tests/run-tests.js && node tests/limbo-exhaustive.js",
+    "test:ui": "node tests/ui-test.js"
+  },
+  "engines": { "node": ">=19" },
+  "devDependencies": { "puppeteer-core": "^24.0.0" }
+}
